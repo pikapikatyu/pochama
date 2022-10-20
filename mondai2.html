@@ -1,0 +1,209 @@
+<!doctype html public "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Language" content="ja">
+    <meta http-equiv="Content-Type" content="text/html; charset=Shift_JIS">
+    <meta http-equiv="Content-Style-Type" content="text/css; charset=Shift_JIS">
+    <meta http-equiv="Content-Script-Type" content="text/javascript">
+    <style type="text/css">
+        body {
+            background-color: #000000;
+        }
+        #kid {
+            text-align: center;
+        }
+        #kid h2{
+            color: #FFFAFA;
+        }
+
+        #hinto {
+            text-align: center;
+        }
+
+        #prof {
+            text-align: center;
+        }
+
+        #tirasi {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <br>
+    <br>
+    <div id="gamen">
+    <div id="kid">
+        <img src="img/kid.png" width="200" height="200">
+        <h2>kaito</h2>
+    </div>
+    <br>
+    <div id="cc" align="center">
+    <br>
+    <form name="form" action="" onsubmit="return check()">
+    <input name="pas" size="24" maxlength=20 value="">
+    <input type="submit" class="bar" value="login"><br>
+    <br>
+    <div id="hinto">
+        <a href="hinto.html">パスワードを忘れた場合</a>
+    </div>
+    <br>
+    <br>
+    <table><tr>
+        <td><input type="button" class="key" value="1" onClick="keyEvent('1')"></td>
+        <td><input type="button" class="key" value="2" onClick="keyEvent('2')"></td>
+        <td><input type="button" class="key" value="3" onClick="keyEvent('3')"></td>
+        <td><input type="button" class="key" value="4" onClick="keyEvent('4')"></td>
+        <td><input type="button" class="key" value="5" onClick="keyEvent('5')"></td>
+        <td><input type="button" class="key" value="6" onClick="keyEvent('6')"></td>
+        <td><input type="button" class="key" value="7" onClick="keyEvent('7')"></td>
+        <td><input type="button" class="key" value="8" onClick="keyEvent('8')"></td>
+        <td><input type="button" class="key" value="9" onClick="keyEvent('9')"></td>
+        <td><input type="button" class="key" value="0" onClick="keyEvent('0')"></td>
+        <td><input type="button" class="key" value="-" onClick="keyEvent('-')"></td>
+        <td><input type="button" class="key" value="^" onClick="keyEvent('^')"></td>
+        <td><input type="button" class="key" value="&yen;" onClick="keyEvent('\\')"></td>
+    </tr></table>
+    <table><tr>
+        <td><input type="button" class="key" value="q" onClick="keyEvent('q')"></td>
+        <td><input type="button" class="key" value="w" onClick="keyEvent('w')"></td>
+        <td><input type="button" class="key" value="e" onClick="keyEvent('e')"></td>
+        <td><input type="button" class="key" value="r" onClick="keyEvent('r')"></td>
+        <td><input type="button" class="key" value="t" onClick="keyEvent('t')"></td>
+        <td><input type="button" class="key" value="y" onClick="keyEvent('y')"></td>
+        <td><input type="button" class="key" value="u" onClick="keyEvent('u')"></td>
+        <td><input type="button" class="key" value="i" onClick="keyEvent('i')"></td>
+        <td><input type="button" class="key" value="o" onClick="keyEvent('o')"></td>
+        <td><input type="button" class="key" value="p" onClick="keyEvent('p')"></td>
+        <td><input type="button" class="key" value="@" onClick="keyEvent('@')"></td>
+        <td><input type="button" class="key" value="[" onClick="keyEvent('[')"></td>
+    </tr></table>
+    <table><tr>
+        <td><input type="button" class="non"></td>
+        <td><input type="button" class="key" value="a" onClick="keyEvent('a')"></td>
+        <td><input type="button" class="key" value="s" onClick="keyEvent('s')"></td>
+        <td><input type="button" class="key" value="d" onClick="keyEvent('d')"></td>
+        <td><input type="button" class="key" value="f" onClick="keyEvent('f')"></td>
+        <td><input type="button" class="key" value="g" onClick="keyEvent('g')"></td>
+        <td><input type="button" class="key" value="h" onClick="keyEvent('h')"></td>
+        <td><input type="button" class="key" value="j" onClick="keyEvent('j')"></td>
+        <td><input type="button" class="key" value="k" onClick="keyEvent('k')"></td>
+        <td><input type="button" class="key" value="l" onClick="keyEvent('l')"></td>
+        <td><input type="button" class="key" value=";" onClick="keyEvent(';')"></td>
+        <td><input type="button" class="key" value=":" onClick="keyEvent(':')"></td>
+        <td><input type="button" class="key" value="]" onClick="keyEvent(']')"></td>
+    </tr></table>
+    <table><tr>
+        <td><input type="button" class="non"></td>
+        <td><input type="button" class="key" value="z" onClick="keyEvent('z')"></td>
+        <td><input type="button" class="key" value="x" onClick="keyEvent('x')"></td>
+        <td><input type="button" class="key" value="c" onClick="keyEvent('c')"></td>
+        <td><input type="button" class="key" value="v" onClick="keyEvent('v')"></td>
+        <td><input type="button" class="key" value="b" onClick="keyEvent('b')"></td>
+        <td><input type="button" class="key" value="n" onClick="keyEvent('n')"></td>
+        <td><input type="button" class="key" value="m" onClick="keyEvent('m')"></td>
+        <td><input type="button" class="key" value="," onClick="keyEvent(',')"></td>
+        <td><input type="button" class="key" value="." onClick="keyEvent('.')"></td>
+        <td><input type="button" class="key" value="/" onClick="keyEvent('/')"></td>
+        <td><input type="button" class="key" disabled="disabled"></td>
+    <table><tr>
+    <br>
+    <table><tr>
+        <td><input type="button" class="key" value="!" onClick="keyEvent('!')"></td>
+        <td><input type="button" class="key" value="&quot;" onClick="keyEvent('&quot;')"></td>
+        <td><input type="button" class="key" value="#" onClick="keyEvent('#')"></td>
+        <td><input type="button" class="key" value="$" onClick="keyEvent('$')"></td>
+        <td><input type="button" class="key" value="%" onClick="keyEvent('%')"></td>
+        <td><input type="button" class="key" value="&" onClick="keyEvent('&')"></td>
+        <td><input type="button" class="key" value="'" onClick="keyEvent('\'')"></td>
+        <td><input type="button" class="key" value="(" onClick="keyEvent('(')"></td>
+        <td><input type="button" class="key" value=")" onClick="keyEvent(')')"></td>
+        <td><input type="button" class="key" disabled="disabled"></td>
+        <td><input type="button" class="key" value="=" onClick="keyEvent('=')"></td>
+        <td><input type="button" class="key" value="~" onClick="keyEvent('~')"></td>
+        <td><input type="button" class="key" value="|" onClick="keyEvent('|')"></td>
+    </tr></table>
+    <table><tr>
+        <td><input type="button" class="key" value="Q" onClick="keyEvent('Q')"></td>
+        <td><input type="button" class="key" value="W" onClick="keyEvent('W')"></td>
+        <td><input type="button" class="key" value="E" onClick="keyEvent('E')"></td>
+        <td><input type="button" class="key" value="R" onClick="keyEvent('R')"></td>
+        <td><input type="button" class="key" value="T" onClick="keyEvent('T')"></td>
+        <td><input type="button" class="key" value="Y" onClick="keyEvent('Y')"></td>
+        <td><input type="button" class="key" value="U" onClick="keyEvent('U')"></td>
+        <td><input type="button" class="key" value="I" onClick="keyEvent('I')"></td>
+        <td><input type="button" class="key" value="O" onClick="keyEvent('O')"></td>
+        <td><input type="button" class="key" value="P" onClick="keyEvent('P')"></td>
+        <td><input type="button" class="key" value="`" onClick="keyEvent('`')"></td>
+        <td><input type="button" class="key" value="{" onClick="keyEvent('{')"></td>
+    </tr></table>
+    <table><tr>
+        <td><input type="button" class="non"></td>
+        <td><input type="button" class="key" value="A" onClick="keyEvent('A')"></td>
+        <td><input type="button" class="key" value="S" onClick="keyEvent('S')"></td>
+        <td><input type="button" class="key" value="D" onClick="keyEvent('D')"></td>
+        <td><input type="button" class="key" value="F" onClick="keyEvent('F')"></td>
+        <td><input type="button" class="key" value="G" onClick="keyEvent('G')"></td>
+        <td><input type="button" class="key" value="H" onClick="keyEvent('H')"></td>
+        <td><input type="button" class="key" value="J" onClick="keyEvent('J')"></td>
+        <td><input type="button" class="key" value="K" onClick="keyEvent('K')"></td>
+        <td><input type="button" class="key" value="L" onClick="keyEvent('L')"></td>
+        <td><input type="button" class="key" value="+" onClick="keyEvent('+')"></td>
+        <td><input type="button" class="key" value="*" onClick="keyEvent('*')"></td>
+        <td><input type="button" class="key" value="}" onClick="keyEvent('}')"></td>
+    </tr></table>
+    <table><tr>
+        <td><input type="button" class="non"></td>
+        <td><input type="button" class="key" value="Z" onClick="keyEvent('Z')"></td>
+        <td><input type="button" class="key" value="X" onClick="keyEvent('X')"></td>
+        <td><input type="button" class="key" value="C" onClick="keyEvent('C')"></td>
+        <td><input type="button" class="key" value="V" onClick="keyEvent('V')"></td>
+        <td><input type="button" class="key" value="B" onClick="keyEvent('B')"></td>
+        <td><input type="button" class="key" value="N" onClick="keyEvent('N')"></td>
+        <td><input type="button" class="key" value="M" onClick="keyEvent('M')"></td>
+        <td><input type="button" class="key" value="&lt;" onClick="keyEvent('&lt;')"></td>
+        <td><input type="button" class="key" value="&gt;" onClick="keyEvent('&gt;')"></td>
+        <td><input type="button" class="key" value="?" onClick="keyEvent('?')"></td>
+        <td><input type="button" class="key" value="_" onClick="keyEvent('_')"></td>
+    </tr></table>
+    <hr>
+    <table><tr><th>
+        <input type="button" class="bar" value="スペース" onclick="keyEvent(' ')">&nbsp;
+        <input type="button" class="bar" value="１文字クリア" onclick="oneClear()">&nbsp;
+        <input type="button" class="bar" value="全てクリア" onclick="allClear()">
+    </th></tr></table>
+    </form>
+    </div>
+    
+    <script type="text/javascript">
+        var t=document.myForm.tx1;
+
+        function keyEvent(c) {
+        if(t.value.length < 20) t.value += c;
+        }
+        function allClear() {
+        t.value = '';
+        }
+        function oneClear() {
+        t.value = t.value.substring(0,t.value.length-1);
+        }
+
+        function check() {
+            if(form.pas.value == ''){ 
+                alert('パスワードを入力してください');
+                return false;
+            }
+
+            if(form.pas.value == "chocolate"){
+                window.open('success2.html');
+            }else{
+                alert('パスワードが違います');
+                return false;
+            }
+        }
+    </script>
+
+</body>
+</html>
