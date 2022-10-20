@@ -1,0 +1,108 @@
+body {
+  background-color: black;
+  color: white;
+}
+
+
+.box {
+  display: flex;
+  width: 1250px;
+  height: 555px;
+  overflow-x: scroll;
+  z-index: 10;
+  position: absolute;
+}
+ 
+.box div {
+  width:90%;
+  margin: 5px;
+  flex-shrink: 0;
+}
+
+.box::-webkit-scrollbar {
+  height: 14px; /* スクロールバーの高さ */
+}
+ 
+.box::-webkit-scrollbar-thumb {
+  background: #d2b48c; /* ツマミの色 */
+  border-radius: 7px; /* ツマミ両端の丸み */
+}
+ 
+.box::-webkit-scrollbar-track {
+  background: #f5deb3; /* トラックの色 */
+  border-radius: 7px; /* トラック両端の丸み */
+}
+
+.title {
+  font-size: 32px;
+  color: black;
+  z-index: 12;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  vertical-align:300%;
+}
+
+.background {
+  width: 500px;
+  height: 500px;
+  position: relative;
+  background: url(../img/01.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+ 
+figure.side_image {
+  display: inline-block;
+}
+ 
+p.side_text {
+  display: inline-block;
+  width: 400px;
+  vertical-align: center;
+  font-size:32px;
+  margin: 0;
+  padding-top: 100px;
+}
+
+div.parent_box {
+  width: 1000px;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+
+
+.button01 a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding: 1em 2em;
+  width: 300px;
+  color: #333;
+  font-size: 18px;
+  font-weight: 700;
+  background-color: lightyellow;
+  transition: 0.3s;
+}
+
+.button01 a::after {
+  content: '';
+  width: 5px;
+  height: 5px;
+  border-top: 3px solid #333333;
+  border-right: 3px solid #333333;
+  transform: rotate(45deg);
+}
+
+.button01 a:hover {
+  text-decoration: none;
+  background-color: lightcyan;
+}
+

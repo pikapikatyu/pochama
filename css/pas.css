@@ -1,0 +1,17 @@
+a.btn--black {
+    color: white;
+    background-color: blue;
+}
+
+a.btn--shadow {
+    -webkit-box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+a.btn--circle {
+    border-radius: 70%;
+    line-height: 100px;
+    width: 100px;
+    height: 100px;
+    padding: 0;
+}

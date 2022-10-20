@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+a {
+    color: green;
+  }
+
+body {
+    background-color: #EEEEEE	;
+    color: green;
+    text-align:center;
+    
+}
+
+#dai {
+    color: green;
+    text-align: center;
+    padding: 90px;
+    font-size: 40px;
+
+}
+
+ul {
+    list-style-type: none;
+    text-align: center;
+    margin-top: 0;
+    font-size: 20px;
+}
+
+.m-form-text {
+    height: 2.4em;
+    width: 30%;
+    padding: 0 16px;
+    border-radius: 4px;
+    border: none;
+    box-shadow: 0 0 0 1px #ccc inset;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.m-form-text:focus {
+    outline: 0;
+    box-shadow: 0 0 0 2px rgb(33, 150, 243) inset;
+}
+

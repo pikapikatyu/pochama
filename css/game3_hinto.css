@@ -1,0 +1,43 @@
+a {
+    color: green;
+  }
+
+  p{
+    color:green;
+    font-size : 20px;
+    font-family : fantasy;
+  }
+
+body {
+    background-color: #EEEEEE	;
+    color: green;
+    text-align:center;
+    
+}
+
+.clicktxt {
+    color:#ffffff;
+    background-color: green;
+    padding:15px 120px;
+    border-radius: 0px;
+    
+    }
+    
+    .switchdsp input {
+    display: none;
+    }
+    
+    .switchdsp .dsp {
+    padding: 0px 10px 0px 10px;
+    height: 0;
+    overflow: hidden;
+    transition: 0.9s;
+    opacity: 0;
+    }
+    
+    .switchdsp input:checked ~ .dsp {
+    padding: 0px 25px 0px 25px;
+    height: auto;
+    opacity: 1;
+    }
+    
