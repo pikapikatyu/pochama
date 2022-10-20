@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>stage1</title>
+        <style type="text/css">
+            body {
+                background-image: url("mobile.png");
+                background-position: top;
+                background-attachment: scroll;
+                background-repeat: no-repeat;
+                background-size: 350px;
+            }
+            #dai {
+                text-align: center;
+                font-weight: bold;
+                color: aliceblue;
+            }
+
+            #form {
+                text-align: center;
+            }
+
+            #but {
+                display:inline-block;
+            }
+
+            .key1 {
+                width: 6em;
+                height: 5em;
+            }
+
+            img {
+                height: 350px;
+                width: 100%;
+                position: relative;
+                top: 100px;
+            }
+
+            @media screen and (max-width:480px) {
+                img {
+                    height: 100px;
+                    width: 100%;
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1></h1>
+        <div id="dai">
+            <p>山田マルコの携帯</p>
+        </div>
+        <div id="form">
+            <form name="form1" action="" onsubmit="return check()">
+                <input name="pas" size="24" maxlength="4"> <!--テキストボックス-->
+                <hr> <!--横線-->
+                <div id="but">
+                    <table>
+                        <tr>
+                            <td><input type="button" class="key1" value="1" onclick="keyEvent('1')"></td>
+                            <td><input type="button" class="key1" value="2" onclick="keyEvent('2')"></td>
+                            <td><input type="button" class="key1" value="3" onclick="keyEvent('3')"></td>
+                        </tr>
+                    </table>
+                    <table>
+                        <tr>
+                            <td><input type="button" class="key1" value="4" onclick="keyEvent('4')"></td>
+                            <td><input type="button" class="key1" value="5" onclick="keyEvent('5')"></td>
+                            <td><input type="button" class="key1" value="6" onclick="keyEvent('6')"></td>
+                        </tr>
+                    </table>
+                    <table>
+                        <tr>
+                            <td><input type="button" class="key1" value="7" onclick="keyEvent('7')"></td>
+                            <td><input type="button" class="key1" value="8" onclick="keyEvent('8')"></td>
+                            <td><input type="button" class="key1" value="9" onclick="keyEvent('9')"></td>
+                        </tr>
+                    </table>
+                    <table>
+                        <tr>
+                            <td><input type="button" class="key1" value="0" onclick="keyEvent('0')"></td>
+                        </tr>
+                    </table>
+                </div>
+            
+                <hr>
+
+                <div id="but">
+                    <table>
+                        <tr>
+                            <th>
+                                <td><input type="button" class="key1" value="×" onclick="oneclear();">&nbsp;</td>
+                                <td><input type="submit" class="key1" value="送信"></td>
+                            </th>
+                        </tr>    
+                    </table>
+                </div>
+            </form>
+        </div>
+
+        <img src="s3.png" onclick="alert('パスワードなんて簡単にばれないし、誕生日でいいかなぁ')">
+
+        <p>a</p>
+        <p>a</p>
+        <p>写真を押すとヒントが出るかも...</p>
+
+        <script type="text/javascript">
+            var t = document.form1.pas;
+            
+            function keyEvent(c) {
+                if(t.value.length < 4) t.value += c;
+            }
+            
+            function oneclear() {
+                t.value = t.value.substring(0,t.value.length-1);
+            }
+
+            Longin.doError = function doError(msg) {
+                alert(msg);
+                return false;
+            }
+
+            var a = Integer.toHexString(form1.pas.value);
+
+            function check() {
+                if(form1.pas.value == ''){ 
+                    alert('パスワードを入力してください');
+                    return false;
+                }
+
+                if(form1.pas.value == '1111'){
+                    window.open('success1.html');
+                }else{
+                    alert('パスワードが違います');
+                    return false;
+                }
+            }
+        </script>
+    </body>
+</html>
