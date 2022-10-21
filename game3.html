@@ -5,7 +5,36 @@
         <meta charset="UTF-8">
         <script src="js/henkan.js"></script>
         <script>
-            function _0xa407(){var _0x366449=['Passwordを入力してください','1272248sDePcQ','4962726168696d40676d61696c2e636f6d','7365637572697479','open','success.html','1180WyjGYc','doSuccess','1312eygOnC','E-mail・Passwordが違います','value','3318301uBFZmd','name','doLogin','E-mailを入力してください','24daGsgZ','email','doError','14993350GrXdcc','1833066PiZgDG','64662KHEopo','235wjznsD','2283hStDpU'];_0xa407=function(){return _0x366449;};return _0xa407();}var _0xc8ae0b=_0x51c5;(function(_0x2e6ff7,_0x5b09b7){var _0x275db3=_0x51c5,_0x4dc887=_0x2e6ff7();while(!![]){try{var _0x173937=parseInt(_0x275db3(0xc0))/0x1+-parseInt(_0x275db3(0xc2))/0x2*(parseInt(_0x275db3(0xd0))/0x3)+-parseInt(_0x275db3(0xbb))/0x4+parseInt(_0x275db3(0xcf))/0x5*(-parseInt(_0x275db3(0xce))/0x6)+-parseInt(_0x275db3(0xc5))/0x7+-parseInt(_0x275db3(0xc9))/0x8*(-parseInt(_0x275db3(0xcd))/0x9)+parseInt(_0x275db3(0xcc))/0xa;if(_0x173937===_0x5b09b7)break;else _0x4dc887['push'](_0x4dc887['shift']());}catch(_0x3c703f){_0x4dc887['push'](_0x4dc887['shift']());}}}(_0xa407,0x4c961));function _0x51c5(_0x4ac59b,_0x12a2fa){var _0xa40740=_0xa407();return _0x51c5=function(_0x51c5dc,_0x3ef990){_0x51c5dc=_0x51c5dc-0xbb;var _0x54b753=_0xa40740[_0x51c5dc];return _0x54b753;},_0x51c5(_0x4ac59b,_0x12a2fa);}var count=0x0,Login={};Login[_0xc8ae0b(0xc7)]=function doLogin(_0x219de0){var _0x3f769f=_0xc8ae0b;count++;if(login[_0x3f769f(0xc6)][_0x3f769f(0xc4)]=='')return Login['doError'](_0x3f769f(0xc8));if(login[_0x3f769f(0xca)][_0x3f769f(0xc4)]=='')return Login[_0x3f769f(0xcb)](_0x3f769f(0xd1));if(toHex(login['name'][_0x3f769f(0xc4)])==_0x3f769f(0xbc)){if(toHex(login[_0x3f769f(0xca)][_0x3f769f(0xc4)])==_0x3f769f(0xbd))window[_0x3f769f(0xbe)](_0x3f769f(0xbf));else return Login[_0x3f769f(0xcb)](_0x3f769f(0xc3));}else return Login['doError']('E-mail・Passwordが違います');},Login[_0xc8ae0b(0xc1)]=function doSuccess(_0x35a3fb){return pageTransition(_0x35a3fb),![];},Login[_0xc8ae0b(0xcb)]=function doError(_0x3ddb0b){return alert(_0x3ddb0b),![];};
+             var count =0;
+            var Login = {};
+            Login.doLogin = function doLogin(loginForm) {
+                count++;
+                    if(login.name.value == ''){
+                        return Login.doError('E-mailを入力してください');
+                    }
+                    if(login.email.value == ''){
+                        return Login.doError('Passwordを入力してください');
+                    }
+                    if(toHex(login.name.value) == '4962726168696d40676d61696c2e636f6d'){ 
+                        if(toHex(login.email.value) =='7365637572697479'){
+                            window.open('success.html');
+                        }else{
+                            return Login.doError("E-mail・Passwordが違います");
+                        }
+                    }else{
+                        return Login.doError("E-mail・Passwordが違います");
+                    }
+                }
+            
+
+        Login.doSuccess = function doSuccess(msg) {
+            pageTransition(msg);
+            return false;
+        }
+        Login.doError = function doError(msg) {
+            alert(msg);
+            return false;
+        }
             </script>
             
     </head>
