@@ -25,12 +25,7 @@
                         return Login.doError("E-mail・Passwordが違います");
                     }
                 }
-            
 
-        Login.doSuccess = function doSuccess(msg) {
-            pageTransition(msg);
-            return false;
-        }
         Login.doError = function doError(msg) {
             alert(msg);
             return false;
