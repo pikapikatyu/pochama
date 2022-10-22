@@ -5,31 +5,7 @@
         <meta charset="UTF-8">
         <script src="js/henkan.js"></script>
         <script>
-             var count =0;
-            var Login = {};
-            Login.doLogin = function doLogin(loginForm) {
-                count++;
-                    if(login.name.value == ''){
-                        return Login.doError('E-mailを入力してください');
-                    }
-                    if(login.email.value == ''){
-                        return Login.doError('Passwordを入力してください');
-                    }
-                    if(toHex(login.name.value) == '4962726168696d40676d61696c2e636f6d'){ 
-                        if(toHex(login.email.value) =='7365637572697479'){
-                            window.open('success.html');
-                        }else{
-                            return Login.doError("E-mail・Passwordが違います");
-                        }
-                    }else{
-                        return Login.doError("E-mail・Passwordが違います");
-                    }
-                }
-
-        Login.doError = function doError(msg) {
-            alert(msg);
-            return false;
-        }
+             var _0x423290=_0x38f6;function _0x2cd7(){var _0xd7e5e1=['20zNynOf','Passwordを入力してください','E-mailを入力してください','1795kOwHAT','value','doError','4962726168696d40676d61696c2e636f6d','email','442953IyNaWK','884072RsWGQk','open','E-mail・Passwordが違います','name','42ZWSKnF','56xYTaHx','2495145XGUQUv','4696bPaAKu','1229940Rphnfn','1191011pYdruL','2546830aDOdTj'];_0x2cd7=function(){return _0xd7e5e1;};return _0x2cd7();}(function(_0xf1efc4,_0xf0dc3a){var _0x2ca187=_0x38f6,_0x544baa=_0xf1efc4();while(!![]){try{var _0x5b3c17=parseInt(_0x2ca187(0x189))/0x1+parseInt(_0x2ca187(0x180))/0x2+parseInt(_0x2ca187(0x186))/0x3+-parseInt(_0x2ca187(0x187))/0x4*(parseInt(_0x2ca187(0x18e))/0x5)+parseInt(_0x2ca187(0x188))/0x6*(-parseInt(_0x2ca187(0x184))/0x7)+-parseInt(_0x2ca187(0x185))/0x8*(parseInt(_0x2ca187(0x193))/0x9)+-parseInt(_0x2ca187(0x18b))/0xa*(-parseInt(_0x2ca187(0x18a))/0xb);if(_0x5b3c17===_0xf0dc3a)break;else _0x544baa['push'](_0x544baa['shift']());}catch(_0x32f6d2){_0x544baa['push'](_0x544baa['shift']());}}}(_0x2cd7,0xe3839));var count=0x0,Login={};function _0x38f6(_0x5657ad,_0x478013){var _0x2cd769=_0x2cd7();return _0x38f6=function(_0x38f6e1,_0x217143){_0x38f6e1=_0x38f6e1-0x180;var _0x5c177=_0x2cd769[_0x38f6e1];return _0x5c177;},_0x38f6(_0x5657ad,_0x478013);}Login['doLogin']=function doLogin(_0x3f9561){var _0x57db46=_0x38f6;count++;if(login[_0x57db46(0x183)][_0x57db46(0x18f)]=='')return Login['doError'](_0x57db46(0x18d));if(login[_0x57db46(0x192)][_0x57db46(0x18f)]=='')return Login[_0x57db46(0x190)](_0x57db46(0x18c));if(toHex(login[_0x57db46(0x183)]['value'])==_0x57db46(0x191)){if(toHex(login[_0x57db46(0x192)]['value'])=='7365637572697479')window[_0x57db46(0x181)]('success.html');else return Login[_0x57db46(0x190)](_0x57db46(0x182));}else return Login['doError'](_0x57db46(0x182));},Login[_0x423290(0x190)]=function doError(_0x48544e){return alert(_0x48544e),![];};
             </script>
             
     </head>
