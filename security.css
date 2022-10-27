@@ -1,0 +1,28 @@
+@charset "UTF-8";
+p{
+    text-align: center;
+}
+
+a{
+    color:white;
+}
+
+
+body {
+    background-color: gray;
+    color: white;
+}
+
+#dai {
+    color: white;
+    text-align: center;
+    padding: 200px;
+    font-size: 40px;
+}
+
+ul {
+    list-style-type: none;
+    text-align: center;
+    margin-top: 0;
+    font-size: 20px;
+}
