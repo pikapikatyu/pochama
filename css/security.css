@@ -1,7 +1,15 @@
 @charset "UTF-8";
+p{
+    text-align: center;
+}
+
+a{
+    color:white;
+}
+
 
 body {
-    background-color: black;
+    background-color: gray;
     color: white;
 }
 
